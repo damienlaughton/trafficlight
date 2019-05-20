@@ -1,0 +1,20 @@
+PODS:
+  - iOSSnapshotTestCase (6.0.2):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.0.2)
+  - iOSSnapshotTestCase/Core (6.0.2)
+  - iOSSnapshotTestCase/SwiftSupport (6.0.2):
+    - iOSSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - iOSSnapshotTestCase
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - iOSSnapshotTestCase
+
+SPEC CHECKSUMS:
+  iOSSnapshotTestCase: 20083a7be9b8ef742610e16c79f15ad829441f29
+
+PODFILE CHECKSUM: ee076ea1db61d47acfc233d62caaf553f56f26f0
+
+COCOAPODS: 1.6.0

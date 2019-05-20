@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Traffic Light View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="TrafficLightViewController" id="BYZ-38-t0r" customClass="TrafficLightViewController" customModule="trafficlight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCc-wd-RRE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8go-Vr-ckM" customClass="LampView" customModule="trafficlight" customModuleProvider="target">
+                                        <rect key="frame" x="132" y="55.5" width="111" height="111.5"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="RedLamp"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8go-Vr-ckM" secondAttribute="height" multiplier="1:1" id="Lin-4r-L93"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8go-Vr-ckM" firstAttribute="centerY" secondItem="bCc-wd-RRE" secondAttribute="centerY" id="SWf-dP-6UZ"/>
+                                    <constraint firstItem="8go-Vr-ckM" firstAttribute="centerX" secondItem="bCc-wd-RRE" secondAttribute="centerX" id="ZV1-yz-iJD"/>
+                                    <constraint firstItem="8go-Vr-ckM" firstAttribute="height" secondItem="bCc-wd-RRE" secondAttribute="height" multiplier="0.5" id="cWu-yM-dsW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ukm-Ny-jbJ">
+                                <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wz-QI-usk" customClass="LampView" customModule="trafficlight" customModuleProvider="target">
+                                        <rect key="frame" x="132" y="55.5" width="111" height="111"/>
+                                        <color key="backgroundColor" red="1" green="0.82213344570764257" blue="0.17433646238348133" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="AmberLamp"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2wz-QI-usk" secondAttribute="height" multiplier="1:1" id="vr7-dw-tjh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2wz-QI-usk" firstAttribute="centerY" secondItem="Ukm-Ny-jbJ" secondAttribute="centerY" id="3da-v2-5jp"/>
+                                    <constraint firstItem="2wz-QI-usk" firstAttribute="height" secondItem="Ukm-Ny-jbJ" secondAttribute="height" multiplier="0.5" id="cut-Sj-D1t"/>
+                                    <constraint firstItem="2wz-QI-usk" firstAttribute="centerX" secondItem="Ukm-Ny-jbJ" secondAttribute="centerX" id="yza-TB-bpV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2m-G3-bXg">
+                                <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gue-eo-cDb" customClass="LampView" customModule="trafficlight" customModuleProvider="target">
+                                        <rect key="frame" x="132" y="56" width="111" height="111"/>
+                                        <color key="backgroundColor" red="0.0" green="0.72548979922279799" blue="0.68430079595821691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="GreenLamp"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="gue-eo-cDb" secondAttribute="height" multiplier="1:1" id="O2Z-Qt-98X"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gue-eo-cDb" firstAttribute="centerY" secondItem="r2m-G3-bXg" secondAttribute="centerY" id="Jxb-Eb-Lgq"/>
+                                    <constraint firstItem="gue-eo-cDb" firstAttribute="centerX" secondItem="r2m-G3-bXg" secondAttribute="centerX" id="aQO-ad-Xnq"/>
+                                    <constraint firstItem="gue-eo-cDb" firstAttribute="height" secondItem="r2m-G3-bXg" secondAttribute="height" multiplier="0.5" id="twt-CH-HY8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxw-f3-xCN">
+                                <rect key="frame" x="10" y="633" width="56" height="24"/>
+                                <accessibility key="accessibilityConfiguration" identifier="StatusLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmE-o3-9wo">
+                                <rect key="frame" x="324" y="631" width="41" height="36"/>
+                                <accessibility key="accessibilityConfiguration" identifier="NextButton"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dnp-By-vbi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ukm-Ny-jbJ" secondAttribute="trailing" id="0kd-xA-1lz"/>
+                            <constraint firstItem="Ukm-Ny-jbJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Gf-E7-a90"/>
+                            <constraint firstItem="Ukm-Ny-jbJ" firstAttribute="top" secondItem="bCc-wd-RRE" secondAttribute="bottom" id="1h7-6c-eTr"/>
+                            <constraint firstItem="Ukm-Ny-jbJ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.333333" id="1xz-fF-iAN"/>
+                            <constraint firstItem="r2m-G3-bXg" firstAttribute="top" secondItem="Ukm-Ny-jbJ" secondAttribute="bottom" id="8yt-1h-2hI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rmE-o3-9wo" secondAttribute="bottom" id="L2R-R6-nua"/>
+                            <constraint firstItem="rmE-o3-9wo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hxw-f3-xCN" secondAttribute="trailing" constant="8" symbolic="YES" id="L7j-wx-Jcu"/>
+                            <constraint firstAttribute="bottom" secondItem="r2m-G3-bXg" secondAttribute="bottom" id="SlT-fl-q0b"/>
+                            <constraint firstItem="Ukm-Ny-jbJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Thm-l3-QR3"/>
+                            <constraint firstItem="bCc-wd-RRE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZCE-gK-8G4"/>
+                            <constraint firstItem="bCc-wd-RRE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="b4Q-Sw-7pK"/>
+                            <constraint firstItem="bCc-wd-RRE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eN9-t7-4qp"/>
+                            <constraint firstItem="r2m-G3-bXg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eUb-cz-Qts"/>
+                            <constraint firstItem="r2m-G3-bXg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iZg-Aw-v2T"/>
+                            <constraint firstItem="hxw-f3-xCN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="lAb-fR-zQN"/>
+                            <constraint firstItem="Ukm-Ny-jbJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lqJ-uq-fhf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hxw-f3-xCN" secondAttribute="bottom" constant="10" id="xam-1a-cA8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rmE-o3-9wo" secondAttribute="trailing" constant="10" id="yWB-bx-iaZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="amberLampView" destination="2wz-QI-usk" id="yAh-Re-0OO"/>
+                        <outlet property="greenLampView" destination="gue-eo-cDb" id="xde-0F-akF"/>
+                        <outlet property="redLampView" destination="8go-Vr-ckM" id="lxe-fV-sAj"/>
+                        <outlet property="statusLabel" destination="hxw-f3-xCN" id="Df9-Mr-taa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="20.239880059970016"/>
+        </scene>
+    </scenes>
+</document>

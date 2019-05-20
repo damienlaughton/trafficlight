@@ -1,0 +1,1041 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02DCCF92706658123DFEB9F97C7F5BCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C97720D07754B8F519F93D7CA5AD48B /* Foundation.framework */; };
+		05B0FB93D36C759F7614D065FBC0B164 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 504A1F8223314C5A0B331B8C4273FE80 /* FBSnapshotTestController.m */; };
+		091E200786E28C6766A07D636E0B33AB /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = BC48DC784CDACAD49DA9A3F0CC79BE04 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15A3B154223AF927E93AC5C83732F8C1 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5D044F69A97C72B7799CF117341E8 /* UIImage+Diff.m */; };
+		258AD4ECFBD18E67F0B18FE3CF9B1AA7 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AE3CC2610E6FFB0D1A0270438118F6 /* UIImage+Compare.m */; };
+		2B79FFCE612175372C451F1653D32D84 /* iOSSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F02DE0418D08CC750FA2204E1475EEF8 /* iOSSnapshotTestCase-dummy.m */; };
+		2CCCE84C7A1952595015411C9A436D3F /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800359D33520461CA0543426738569B6 /* SwiftSupport.swift */; };
+		3AAE8E4090CB34D632EE0AD71B852D3B /* Pods-trafficlight-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 161DD74E1E7AC8F91616DCBC8DC36172 /* Pods-trafficlight-dummy.m */; };
+		43F296FD5616B0ED2AFB31D98B37B1EE /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = B85B348FD966B3631DFCD752726036AA /* FBSnapshotTestCasePlatform.m */; };
+		4DE6EADE9A71BF90004C24201D5B8E0D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = DB637593BF722533C8210B696377ABA7 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		58387BA41583412E12B779F418565BB6 /* Pods-trafficlightTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D255F0DCEBA6B034414C26333D4AE3 /* Pods-trafficlightTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66BF5BCB2E0E11257E427A19F0CA69BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C97720D07754B8F519F93D7CA5AD48B /* Foundation.framework */; };
+		6B4180B400F5F4BC3E85D36C3F9F5821 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6942863E4F9C7B25B068D635E73BFD3 /* QuartzCore.framework */; };
+		6D43C958217DDF52EA577425F130C245 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B1968951D9BEA947E6F5418C3143C /* FBSnapshotTestCase.m */; };
+		82EEA6D3079819C69F8688B97DAC1CC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C97720D07754B8F519F93D7CA5AD48B /* Foundation.framework */; };
+		83604F2F98561C2DE46A70CF3AE03D56 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E598EA85FAF39ACA9B89D6177D1A61A /* XCTest.framework */; };
+		94BCC7B3DF53D9802499B98ABDC3FB05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5E9FF730C28FC315DD1249D72A070C /* UIKit.framework */; };
+		96A388B63D131D8D54C8AFEC484F388C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C97720D07754B8F519F93D7CA5AD48B /* Foundation.framework */; };
+		C2D51D0E38F630A8A468843702A90348 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = FF5B853D19190B4322252EB15420C6D0 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C46DB373969F2D2697AA55420591EA2F /* Pods-trafficlightTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFAAE7A1F2F4F6E3C64F21A83EDA3BE /* Pods-trafficlightTests-dummy.m */; };
+		D0DE9DDC173315C08C72D6DE1B3C859E /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = A54D982E4F1F3AE6C2513DC49C961C9D /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D91179CD68BA1F5A48C16A42B6D14608 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DA8377F6D0C0F95B2990D6AE711005 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E038BB0E681C02D520574C8563F5FB88 /* Pods-trafficlight-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACCC825748C005D4A90446243FEBF3A /* Pods-trafficlight-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E078C238870C170DD524C8149975B22E /* iOSSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 458A4F5AF8BDA9832449DC873F5724BC /* iOSSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7B32ED09537D571B1A28C42CE9E7DC9 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D027F94081B5F30F9776A9BB94AD245D /* UIImage+Snapshot.m */; };
+		ED8C83B9EB8472C2B3417013C67FBA8C /* Pods-trafficlightUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B89FB5AA477F977A03D016B1B872567 /* Pods-trafficlightUITests-dummy.m */; };
+		FDAFB70A80BD1511E018458533D36CC8 /* Pods-trafficlightUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2838C1969DD4C2E014B9113F22FF3B5C /* Pods-trafficlightUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF107C8DAD13A21F44CE5072AAC76B51 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = F387370FBC913C37F972AC833BE5761C /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B5C01BCB304E55E89A23CC374A3F4D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43015ACAB30591E71A3A22B5E1360DBB;
+			remoteInfo = "Pods-trafficlight";
+		};
+		734D0D99FC0C3A24F3414B40E34F74FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0D5773C6DEB06357ABB396EF13BB2CD;
+			remoteInfo = iOSSnapshotTestCase;
+		};
+		E7D6922E4E190F094645267734987B7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43015ACAB30591E71A3A22B5E1360DBB;
+			remoteInfo = "Pods-trafficlight";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06F36D5AD14B1169A42E3B33A2AB74A3 /* Pods_trafficlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_trafficlight.framework; path = "Pods-trafficlight.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8B0A4D17946434DCE8B3A978EE20CE /* Pods-trafficlight-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-trafficlight-acknowledgements.plist"; sourceTree = "<group>"; };
+		12BB2E097EAEB6815E85C7C398CC27AD /* Pods-trafficlightUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-trafficlightUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		161DD74E1E7AC8F91616DCBC8DC36172 /* Pods-trafficlight-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-trafficlight-dummy.m"; sourceTree = "<group>"; };
+		1B89FB5AA477F977A03D016B1B872567 /* Pods-trafficlightUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-trafficlightUITests-dummy.m"; sourceTree = "<group>"; };
+		22D255F0DCEBA6B034414C26333D4AE3 /* Pods-trafficlightTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-trafficlightTests-umbrella.h"; sourceTree = "<group>"; };
+		2838C1969DD4C2E014B9113F22FF3B5C /* Pods-trafficlightUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-trafficlightUITests-umbrella.h"; sourceTree = "<group>"; };
+		3926971D60DF069E9262E4D1A7CCEF0B /* Pods-trafficlightUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-trafficlightUITests.modulemap"; sourceTree = "<group>"; };
+		3C97720D07754B8F519F93D7CA5AD48B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3EF0842AD1D7F5DE0349095D7AAF6DE3 /* Pods-trafficlightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-trafficlightUITests.release.xcconfig"; sourceTree = "<group>"; };
+		458A4F5AF8BDA9832449DC873F5724BC /* iOSSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		46DA8377F6D0C0F95B2990D6AE711005 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		49A5FD919F3DF38757ECC57209C8BBB8 /* Pods-trafficlightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-trafficlightUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		504A1F8223314C5A0B331B8C4273FE80 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		5445BAFD91EBB3827EABF3E2895D9BEF /* Pods-trafficlightTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-trafficlightTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		69FFA01D936C2DDB2044FE151D49FDE4 /* Pods-trafficlightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-trafficlightTests.release.xcconfig"; sourceTree = "<group>"; };
+		6DDB83D80DFEF2552ED562F8ED95A760 /* Pods-trafficlightTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-trafficlightTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D22A5C8FB88E86D87E0932310567452 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = iOSSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E598EA85FAF39ACA9B89D6177D1A61A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		800359D33520461CA0543426738569B6 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		8048C031DF22314D169DDE4444C27D12 /* Pods-trafficlight-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-trafficlight-Info.plist"; sourceTree = "<group>"; };
+		9AA7C8CB66A7EBDEF50F3C32F627F060 /* iOSSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "iOSSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		9ACCC825748C005D4A90446243FEBF3A /* Pods-trafficlight-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-trafficlight-umbrella.h"; sourceTree = "<group>"; };
+		9BB225C5A301DF49C65224C29A74E636 /* iOSSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iOSSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A33575BED7533561573FCA3A342BA29C /* Pods-trafficlightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-trafficlightTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A54D982E4F1F3AE6C2513DC49C961C9D /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		A9B5D044F69A97C72B7799CF117341E8 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		AB005A2D2820164B730A18F572CB0CAE /* Pods-trafficlightTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-trafficlightTests-frameworks.sh"; sourceTree = "<group>"; };
+		ACC410D0FAEB78D543FDE79AFEAB2BE1 /* Pods-trafficlightUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-trafficlightUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF61258773BC68DC7DFFB59B8151F81F /* Pods-trafficlight-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-trafficlight-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B23B1968951D9BEA947E6F5418C3143C /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		B85B348FD966B3631DFCD752726036AA /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		BC48DC784CDACAD49DA9A3F0CC79BE04 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		C45A7292A9DDAA535E7769D9B178EFF1 /* Pods-trafficlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-trafficlight.debug.xcconfig"; sourceTree = "<group>"; };
+		C7AE3CC2610E6FFB0D1A0270438118F6 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		CB2F94F235E65D546C4F13E16AF95CDE /* Pods-trafficlight.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-trafficlight.modulemap"; sourceTree = "<group>"; };
+		CBD9E0CCD89516C562E6653F658D3603 /* iOSSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		CC5E9FF730C28FC315DD1249D72A070C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CDB3EE395E366D5B4C9A084AD883B195 /* Pods-trafficlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-trafficlight.release.xcconfig"; sourceTree = "<group>"; };
+		D027F94081B5F30F9776A9BB94AD245D /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		D16CD1033B33497ADC7D558A2FD4D95D /* Pods-trafficlightUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-trafficlightUITests-Info.plist"; sourceTree = "<group>"; };
+		D5FB1A686D9CBF89D3FF0A2350F84E62 /* iOSSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
+		D9A91CEC5C8C2E5A15A970304F4497DE /* Pods-trafficlightTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-trafficlightTests.modulemap"; sourceTree = "<group>"; };
+		DB637593BF722533C8210B696377ABA7 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		DBFAAE7A1F2F4F6E3C64F21A83EDA3BE /* Pods-trafficlightTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-trafficlightTests-dummy.m"; sourceTree = "<group>"; };
+		DF9E4AC757F295AB51B3C72DC119C12F /* Pods_trafficlightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_trafficlightTests.framework; path = "Pods-trafficlightTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6942863E4F9C7B25B068D635E73BFD3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		E9C9E6AFF66C16628AE3ECE0C4698865 /* Pods_trafficlightUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_trafficlightUITests.framework; path = "Pods-trafficlightUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F02DE0418D08CC750FA2204E1475EEF8 /* iOSSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		F387370FBC913C37F972AC833BE5761C /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		F989C89B41459357F94BDE65FE09392E /* Pods-trafficlightTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-trafficlightTests-Info.plist"; sourceTree = "<group>"; };
+		FF5B853D19190B4322252EB15420C6D0 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25AF5C3D39A17A176CB591D1D1F369E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EEA6D3079819C69F8688B97DAC1CC7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D87E1FAEBB82DBCFEA622F57C2236A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DCCF92706658123DFEB9F97C7F5BCD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63369E253ADA75AA40A273BA88D52411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A388B63D131D8D54C8AFEC484F388C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3287CA501DBA186DAEEE8D485738900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BF5BCB2E0E11257E427A19F0CA69BB /* Foundation.framework in Frameworks */,
+				6B4180B400F5F4BC3E85D36C3F9F5821 /* QuartzCore.framework in Frameworks */,
+				94BCC7B3DF53D9802499B98ABDC3FB05 /* UIKit.framework in Frameworks */,
+				83604F2F98561C2DE46A70CF3AE03D56 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0668C0E1067EB0B2639492EE86631DEC /* Pods-trafficlight */ = {
+			isa = PBXGroup;
+			children = (
+				CB2F94F235E65D546C4F13E16AF95CDE /* Pods-trafficlight.modulemap */,
+				AF61258773BC68DC7DFFB59B8151F81F /* Pods-trafficlight-acknowledgements.markdown */,
+				0A8B0A4D17946434DCE8B3A978EE20CE /* Pods-trafficlight-acknowledgements.plist */,
+				161DD74E1E7AC8F91616DCBC8DC36172 /* Pods-trafficlight-dummy.m */,
+				8048C031DF22314D169DDE4444C27D12 /* Pods-trafficlight-Info.plist */,
+				9ACCC825748C005D4A90446243FEBF3A /* Pods-trafficlight-umbrella.h */,
+				C45A7292A9DDAA535E7769D9B178EFF1 /* Pods-trafficlight.debug.xcconfig */,
+				CDB3EE395E366D5B4C9A084AD883B195 /* Pods-trafficlight.release.xcconfig */,
+			);
+			name = "Pods-trafficlight";
+			path = "Target Support Files/Pods-trafficlight";
+			sourceTree = "<group>";
+		};
+		1EBD46818714F8BE58753F7F9B38D221 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3C97720D07754B8F519F93D7CA5AD48B /* Foundation.framework */,
+				E6942863E4F9C7B25B068D635E73BFD3 /* QuartzCore.framework */,
+				CC5E9FF730C28FC315DD1249D72A070C /* UIKit.framework */,
+				7E598EA85FAF39ACA9B89D6177D1A61A /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		32602A2B2A479B5828B60D9CB5F00714 /* Pods-trafficlightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3926971D60DF069E9262E4D1A7CCEF0B /* Pods-trafficlightUITests.modulemap */,
+				12BB2E097EAEB6815E85C7C398CC27AD /* Pods-trafficlightUITests-acknowledgements.markdown */,
+				ACC410D0FAEB78D543FDE79AFEAB2BE1 /* Pods-trafficlightUITests-acknowledgements.plist */,
+				1B89FB5AA477F977A03D016B1B872567 /* Pods-trafficlightUITests-dummy.m */,
+				D16CD1033B33497ADC7D558A2FD4D95D /* Pods-trafficlightUITests-Info.plist */,
+				2838C1969DD4C2E014B9113F22FF3B5C /* Pods-trafficlightUITests-umbrella.h */,
+				49A5FD919F3DF38757ECC57209C8BBB8 /* Pods-trafficlightUITests.debug.xcconfig */,
+				3EF0842AD1D7F5DE0349095D7AAF6DE3 /* Pods-trafficlightUITests.release.xcconfig */,
+			);
+			name = "Pods-trafficlightUITests";
+			path = "Target Support Files/Pods-trafficlightUITests";
+			sourceTree = "<group>";
+		};
+		435489B56C63D57B6F480411D2ECC160 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA2A71A623AA9A54902174E70CDE0CC7 /* iOSSnapshotTestCase */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		79AF961CD592B75F70890CC86D39AAB5 /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				800359D33520461CA0543426738569B6 /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		8F702E6B124884D37DC284CE24DB4259 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BB225C5A301DF49C65224C29A74E636 /* iOSSnapshotTestCase.modulemap */,
+				D5FB1A686D9CBF89D3FF0A2350F84E62 /* iOSSnapshotTestCase.xcconfig */,
+				F02DE0418D08CC750FA2204E1475EEF8 /* iOSSnapshotTestCase-dummy.m */,
+				9AA7C8CB66A7EBDEF50F3C32F627F060 /* iOSSnapshotTestCase-Info.plist */,
+				CBD9E0CCD89516C562E6653F658D3603 /* iOSSnapshotTestCase-prefix.pch */,
+				458A4F5AF8BDA9832449DC873F5724BC /* iOSSnapshotTestCase-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iOSSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		B878EA7C51427D6A4CB2FEFF287D9D45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D22A5C8FB88E86D87E0932310567452 /* FBSnapshotTestCase.framework */,
+				06F36D5AD14B1169A42E3B33A2AB74A3 /* Pods_trafficlight.framework */,
+				DF9E4AC757F295AB51B3C72DC119C12F /* Pods_trafficlightTests.framework */,
+				E9C9E6AFF66C16628AE3ECE0C4698865 /* Pods_trafficlightUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EBD46818714F8BE58753F7F9B38D221 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7BCDE42E29162FDBAE7A3C101EC675F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0668C0E1067EB0B2639492EE86631DEC /* Pods-trafficlight */,
+				DC8061FB9BD5431CCD0A8504CD1A873A /* Pods-trafficlightTests */,
+				32602A2B2A479B5828B60D9CB5F00714 /* Pods-trafficlightUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				435489B56C63D57B6F480411D2ECC160 /* Pods */,
+				B878EA7C51427D6A4CB2FEFF287D9D45 /* Products */,
+				C7BCDE42E29162FDBAE7A3C101EC675F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DA2A71A623AA9A54902174E70CDE0CC7 /* iOSSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				E1F79752E97D0A763C53E9373F4BA10C /* Core */,
+				8F702E6B124884D37DC284CE24DB4259 /* Support Files */,
+				79AF961CD592B75F70890CC86D39AAB5 /* SwiftSupport */,
+			);
+			name = iOSSnapshotTestCase;
+			path = iOSSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		DC8061FB9BD5431CCD0A8504CD1A873A /* Pods-trafficlightTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9A91CEC5C8C2E5A15A970304F4497DE /* Pods-trafficlightTests.modulemap */,
+				5445BAFD91EBB3827EABF3E2895D9BEF /* Pods-trafficlightTests-acknowledgements.markdown */,
+				6DDB83D80DFEF2552ED562F8ED95A760 /* Pods-trafficlightTests-acknowledgements.plist */,
+				DBFAAE7A1F2F4F6E3C64F21A83EDA3BE /* Pods-trafficlightTests-dummy.m */,
+				AB005A2D2820164B730A18F572CB0CAE /* Pods-trafficlightTests-frameworks.sh */,
+				F989C89B41459357F94BDE65FE09392E /* Pods-trafficlightTests-Info.plist */,
+				22D255F0DCEBA6B034414C26333D4AE3 /* Pods-trafficlightTests-umbrella.h */,
+				A33575BED7533561573FCA3A342BA29C /* Pods-trafficlightTests.debug.xcconfig */,
+				69FFA01D936C2DDB2044FE151D49FDE4 /* Pods-trafficlightTests.release.xcconfig */,
+			);
+			name = "Pods-trafficlightTests";
+			path = "Target Support Files/Pods-trafficlightTests";
+			sourceTree = "<group>";
+		};
+		E1F79752E97D0A763C53E9373F4BA10C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BC48DC784CDACAD49DA9A3F0CC79BE04 /* FBSnapshotTestCase.h */,
+				B23B1968951D9BEA947E6F5418C3143C /* FBSnapshotTestCase.m */,
+				46DA8377F6D0C0F95B2990D6AE711005 /* FBSnapshotTestCasePlatform.h */,
+				B85B348FD966B3631DFCD752726036AA /* FBSnapshotTestCasePlatform.m */,
+				FF5B853D19190B4322252EB15420C6D0 /* FBSnapshotTestController.h */,
+				504A1F8223314C5A0B331B8C4273FE80 /* FBSnapshotTestController.m */,
+				A54D982E4F1F3AE6C2513DC49C961C9D /* UIImage+Compare.h */,
+				C7AE3CC2610E6FFB0D1A0270438118F6 /* UIImage+Compare.m */,
+				F387370FBC913C37F972AC833BE5761C /* UIImage+Diff.h */,
+				A9B5D044F69A97C72B7799CF117341E8 /* UIImage+Diff.m */,
+				DB637593BF722533C8210B696377ABA7 /* UIImage+Snapshot.h */,
+				D027F94081B5F30F9776A9BB94AD245D /* UIImage+Snapshot.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		340487C87CE2A12010B8D617B6584D95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAFB70A80BD1511E018458533D36CC8 /* Pods-trafficlightUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B114DA2DF99DB4DE016204793BEC42 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58387BA41583412E12B779F418565BB6 /* Pods-trafficlightTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A051BB72BEC6C4DD32571E75D6C182 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091E200786E28C6766A07D636E0B33AB /* FBSnapshotTestCase.h in Headers */,
+				D91179CD68BA1F5A48C16A42B6D14608 /* FBSnapshotTestCasePlatform.h in Headers */,
+				C2D51D0E38F630A8A468843702A90348 /* FBSnapshotTestController.h in Headers */,
+				E078C238870C170DD524C8149975B22E /* iOSSnapshotTestCase-umbrella.h in Headers */,
+				D0DE9DDC173315C08C72D6DE1B3C859E /* UIImage+Compare.h in Headers */,
+				FF107C8DAD13A21F44CE5072AAC76B51 /* UIImage+Diff.h in Headers */,
+				4DE6EADE9A71BF90004C24201D5B8E0D /* UIImage+Snapshot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7C812526A97D21C2383633A1589EAAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E038BB0E681C02D520574C8563F5FB88 /* Pods-trafficlight-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		43015ACAB30591E71A3A22B5E1360DBB /* Pods-trafficlight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E5889A4411CC89B36A733F81CCB28B8 /* Build configuration list for PBXNativeTarget "Pods-trafficlight" */;
+			buildPhases = (
+				E7C812526A97D21C2383633A1589EAAC /* Headers */,
+				AECA53825D33C3EC6D84D33FA599C44C /* Sources */,
+				25AF5C3D39A17A176CB591D1D1F369E8 /* Frameworks */,
+				A2DBBBFD7D01E498968F1CEA815D75C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-trafficlight";
+			productName = "Pods-trafficlight";
+			productReference = 06F36D5AD14B1169A42E3B33A2AB74A3 /* Pods_trafficlight.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		67433B0EF88D9D17272C810D7077E7D8 /* Pods-trafficlightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2E222328C74BDFA6CDE896422D24F4A /* Build configuration list for PBXNativeTarget "Pods-trafficlightUITests" */;
+			buildPhases = (
+				340487C87CE2A12010B8D617B6584D95 /* Headers */,
+				07DA7DE932198DEA24E6BDF3E725FB70 /* Sources */,
+				63369E253ADA75AA40A273BA88D52411 /* Frameworks */,
+				8B9AF1763995E8A1E2BE8F201DDC0BCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				455D13885A955B5FB1FED6830E012760 /* PBXTargetDependency */,
+			);
+			name = "Pods-trafficlightUITests";
+			productName = "Pods-trafficlightUITests";
+			productReference = E9C9E6AFF66C16628AE3ECE0C4698865 /* Pods_trafficlightUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9FB3BB3047803CA509939DF7C8809543 /* Pods-trafficlightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFFCCC214CEE44EF29F3851EEE3124FB /* Build configuration list for PBXNativeTarget "Pods-trafficlightTests" */;
+			buildPhases = (
+				A1B114DA2DF99DB4DE016204793BEC42 /* Headers */,
+				C4534985AA4E189D55D1D0D66D1B4B7A /* Sources */,
+				52D87E1FAEBB82DBCFEA622F57C2236A /* Frameworks */,
+				9DF04FFCC588033ABFD27020709D6D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B2B28A6009C8DA5D3187689E336D8B8 /* PBXTargetDependency */,
+				E360D6DB2CACE81B961BCA3D5B97C233 /* PBXTargetDependency */,
+			);
+			name = "Pods-trafficlightTests";
+			productName = "Pods-trafficlightTests";
+			productReference = DF9E4AC757F295AB51B3C72DC119C12F /* Pods_trafficlightTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E0D5773C6DEB06357ABB396EF13BB2CD /* iOSSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEB1DCFA8D23D738DB723872276F2402 /* Build configuration list for PBXNativeTarget "iOSSnapshotTestCase" */;
+			buildPhases = (
+				C1A051BB72BEC6C4DD32571E75D6C182 /* Headers */,
+				4E0D9E5D7FD898F301A30F72EF7E3947 /* Sources */,
+				F3287CA501DBA186DAEEE8D485738900 /* Frameworks */,
+				50D0972EB23D3950F66DCF37E3B0428E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSSnapshotTestCase;
+			productName = iOSSnapshotTestCase;
+			productReference = 7D22A5C8FB88E86D87E0932310567452 /* FBSnapshotTestCase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B878EA7C51427D6A4CB2FEFF287D9D45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0D5773C6DEB06357ABB396EF13BB2CD /* iOSSnapshotTestCase */,
+				43015ACAB30591E71A3A22B5E1360DBB /* Pods-trafficlight */,
+				9FB3BB3047803CA509939DF7C8809543 /* Pods-trafficlightTests */,
+				67433B0EF88D9D17272C810D7077E7D8 /* Pods-trafficlightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50D0972EB23D3950F66DCF37E3B0428E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B9AF1763995E8A1E2BE8F201DDC0BCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF04FFCC588033ABFD27020709D6D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2DBBBFD7D01E498968F1CEA815D75C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07DA7DE932198DEA24E6BDF3E725FB70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8C83B9EB8472C2B3417013C67FBA8C /* Pods-trafficlightUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0D9E5D7FD898F301A30F72EF7E3947 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D43C958217DDF52EA577425F130C245 /* FBSnapshotTestCase.m in Sources */,
+				43F296FD5616B0ED2AFB31D98B37B1EE /* FBSnapshotTestCasePlatform.m in Sources */,
+				05B0FB93D36C759F7614D065FBC0B164 /* FBSnapshotTestController.m in Sources */,
+				2B79FFCE612175372C451F1653D32D84 /* iOSSnapshotTestCase-dummy.m in Sources */,
+				2CCCE84C7A1952595015411C9A436D3F /* SwiftSupport.swift in Sources */,
+				258AD4ECFBD18E67F0B18FE3CF9B1AA7 /* UIImage+Compare.m in Sources */,
+				15A3B154223AF927E93AC5C83732F8C1 /* UIImage+Diff.m in Sources */,
+				E7B32ED09537D571B1A28C42CE9E7DC9 /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECA53825D33C3EC6D84D33FA599C44C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AAE8E4090CB34D632EE0AD71B852D3B /* Pods-trafficlight-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4534985AA4E189D55D1D0D66D1B4B7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46DB373969F2D2697AA55420591EA2F /* Pods-trafficlightTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		455D13885A955B5FB1FED6830E012760 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-trafficlight";
+			target = 43015ACAB30591E71A3A22B5E1360DBB /* Pods-trafficlight */;
+			targetProxy = 1B5C01BCB304E55E89A23CC374A3F4D0 /* PBXContainerItemProxy */;
+		};
+		4B2B28A6009C8DA5D3187689E336D8B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-trafficlight";
+			target = 43015ACAB30591E71A3A22B5E1360DBB /* Pods-trafficlight */;
+			targetProxy = E7D6922E4E190F094645267734987B7A /* PBXContainerItemProxy */;
+		};
+		E360D6DB2CACE81B961BCA3D5B97C233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSSnapshotTestCase;
+			target = E0D5773C6DEB06357ABB396EF13BB2CD /* iOSSnapshotTestCase */;
+			targetProxy = 734D0D99FC0C3A24F3414B40E34F74FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1BC67ECA56D0221E80019E5C95E22AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5FB1A686D9CBF89D3FF0A2350F84E62 /* iOSSnapshotTestCase.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSSnapshotTestCase/iOSSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSSnapshotTestCase/iOSSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iOSSnapshotTestCase/iOSSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1EEB107BC9ACCB86C01F23AFF373E845 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69FFA01D936C2DDB2044FE151D49FDE4 /* Pods-trafficlightTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-trafficlightTests/Pods-trafficlightTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-trafficlightTests/Pods-trafficlightTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CC04CFD88164DC58C754C8CD4954D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C45A7292A9DDAA535E7769D9B178EFF1 /* Pods-trafficlight.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-trafficlight/Pods-trafficlight-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-trafficlight/Pods-trafficlight.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		524F0448DBACF7BBF7C49E57779E34C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDB3EE395E366D5B4C9A084AD883B195 /* Pods-trafficlight.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-trafficlight/Pods-trafficlight-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-trafficlight/Pods-trafficlight.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7FB82DBDC5BDAD70C48876A815DCDFA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF0842AD1D7F5DE0349095D7AAF6DE3 /* Pods-trafficlightUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-trafficlightUITests/Pods-trafficlightUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-trafficlightUITests/Pods-trafficlightUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D16807EE9DE7F2179362EEF8A698970E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5FB1A686D9CBF89D3FF0A2350F84E62 /* iOSSnapshotTestCase.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSSnapshotTestCase/iOSSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSSnapshotTestCase/iOSSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iOSSnapshotTestCase/iOSSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DF0C88B593943D81A447A9C76450DA2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49A5FD919F3DF38757ECC57209C8BBB8 /* Pods-trafficlightUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-trafficlightUITests/Pods-trafficlightUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-trafficlightUITests/Pods-trafficlightUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECB978748C77AF6E2E00369A9BF77A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33575BED7533561573FCA3A342BA29C /* Pods-trafficlightTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-trafficlightTests/Pods-trafficlightTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-trafficlightTests/Pods-trafficlightTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E5889A4411CC89B36A733F81CCB28B8 /* Build configuration list for PBXNativeTarget "Pods-trafficlight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CC04CFD88164DC58C754C8CD4954D47 /* Debug */,
+				524F0448DBACF7BBF7C49E57779E34C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */,
+				84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFFCCC214CEE44EF29F3851EEE3124FB /* Build configuration list for PBXNativeTarget "Pods-trafficlightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECB978748C77AF6E2E00369A9BF77A3D /* Debug */,
+				1EEB107BC9ACCB86C01F23AFF373E845 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2E222328C74BDFA6CDE896422D24F4A /* Build configuration list for PBXNativeTarget "Pods-trafficlightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0C88B593943D81A447A9C76450DA2A /* Debug */,
+				7FB82DBDC5BDAD70C48876A815DCDFA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB1DCFA8D23D738DB723872276F2402 /* Build configuration list for PBXNativeTarget "iOSSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BC67ECA56D0221E80019E5C95E22AE0 /* Debug */,
+				D16807EE9DE7F2179362EEF8A698970E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
